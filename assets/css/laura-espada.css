@@ -1,0 +1,74 @@
+/* Laura Espada — tokens y base (generado desde el design system) */
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/ArchivoBlack-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/ArchivoBlack-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Karla';font-style:normal;font-weight:200 800;font-display:swap;src:url('/assets/fonts/Karla-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Karla';font-style:normal;font-weight:200 800;font-display:swap;src:url('/assets/fonts/Karla-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+
+--crema:#FAF6EF;--coral:#D9674E;--salvia:#A9B89A;--marron:#3B2A22;
+
+--crema-50:#FEFCF8;--crema-100:#FAF6EF;--crema-200:#EFE3D0;--crema-300:#E3D3BB;--crema-400:#CDB99D;
+
+--coral-100:#F7DDD4;--coral-200:#EDB3A4;--coral-500:#D9674E;--coral-600:#C4553D;--coral-700:#A7442F;
+
+--salvia-100:#E6EBDF;--salvia-200:#CDD6C2;--salvia-500:#A9B89A;--salvia-700:#6F8061;--salvia-900:#44503A;
+
+--marron-900:#3B2A22;--marron-700:#5A4639;--marron-500:#7D6A5D;--marron-300:#A89586;
+
+--fg-1:var(--marron-900);--fg-2:var(--marron-700);--fg-3:var(--marron-500);--fg-on-accent:var(--crema);--fg-accent:var(--coral-600);
+
+--bg-page:var(--crema);--surface-card:var(--crema-50);--surface-sunken:var(--crema-200);--surface-inverse:var(--marron-900);--surface-accent:var(--coral);--surface-accent-soft:var(--coral-100);--surface-secondary:var(--salvia-100);
+
+--border-1:var(--crema-300);--border-2:var(--crema-400);--border-strong:var(--marron-900);--border-focus:var(--coral);
+
+--action-primary:var(--coral);--action-primary-hover:var(--coral-600);--action-primary-press:var(--coral-700);
+--action-secondary:var(--marron-900);--action-secondary-hover:var(--marron-700);
+
+--status-success:var(--salvia-700);--status-success-bg:var(--salvia-100);--status-error:#A63A28;--status-error-bg:var(--coral-100);
+
+--chart-1:var(--coral);--chart-2:var(--salvia-500);--chart-3:var(--marron-900);--chart-4:var(--coral-200);--chart-5:var(--crema-400);
+
+--text-body:var(--fg-1);--text-muted:var(--fg-2);--text-link:var(--fg-1);
+}
+:root{
+--font-display:'Archivo Black','Arial Black',sans-serif;
+--font-body:'Karla',system-ui,sans-serif;
+--font-heading:var(--font-display);
+
+--text-xs:13px;--text-sm:15px;--text-base:17px;--text-md:19px;--text-lg:22px;--text-xl:28px;--text-2xl:36px;--text-3xl:48px;--text-4xl:64px;--text-5xl:84px;
+
+--weight-regular:400;--weight-medium:500;--weight-bold:700;--weight-extrabold:800;
+
+--leading-tight:1.05;--leading-snug:1.2;--leading-normal:1.5;--leading-relaxed:1.65;
+
+--tracking-display:-0.02em;--tracking-tight:-0.01em;--tracking-normal:0;--tracking-caps:0.06em;
+
+--type-display-size:var(--text-5xl);--type-h1-size:var(--text-4xl);--type-h2-size:var(--text-2xl);--type-h3-size:var(--text-lg);--type-body-size:var(--text-base);--type-button-size:18px;--type-button-size-sm:16px;
+}
+:root{
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:96px;--space-10:128px;
+--container-max:1200px;--container-text:680px;--gutter:24px;
+--section-y:var(--space-9);--card-pad:var(--space-5);--control-h:48px;--control-h-sm:40px;
+}
+:root{
+--radius-xs:3px;--radius-sm:4px;--radius-md:6px;--radius-lg:10px;--radius-pill:999px;
+--radius-button:var(--radius-md);--radius-card:var(--radius-lg);--radius-input:var(--radius-md);
+--border-width:1px;--border-width-strong:2px;
+--shadow-sm:0 1px 2px rgba(59,42,34,.08);
+--shadow-md:0 4px 14px rgba(59,42,34,.08),0 1px 2px rgba(59,42,34,.06);
+--shadow-lg:0 16px 40px rgba(59,42,34,.14),0 2px 6px rgba(59,42,34,.06);
+--focus-ring:0 0 0 3px rgba(217,103,78,.35);
+--overlay:rgba(59,42,34,.45);
+--ease-out:cubic-bezier(.2,.7,.2,1); 
+--duration-fast:120ms; 
+--duration-base:200ms; 
+--duration-slow:320ms; 
+--photo-filter:grayscale(1); 
+}
+html{-webkit-font-smoothing:antialiased}
+body{background:var(--bg-page);color:var(--fg-1);font-family:var(--font-body);font-size:17px;line-height:1.5}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+a{text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+::selection{background:var(--coral-200);color:var(--marron-900)}

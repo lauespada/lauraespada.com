@@ -1,0 +1,24 @@
+# Seguridad para todo el sitio — CSP auditada 2026-09-24: Google Analytics (tras consentimiento) y FormSubmit (formulario)
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; frame-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests
+  ! Access-Control-Allow-Origin
+
+# Caché del navegador
+/assets/img/*
+  Cache-Control: public, max-age=604800
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/*
+  Cache-Control: public, max-age=604800, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+# Evita que la URL pages.dev se indexe como duplicado (cambiar "lauraespada" si el proyecto se llama distinto)
+https://lauraespada.pages.dev/*
+  X-Robots-Tag: noindex
