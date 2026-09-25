@@ -59,7 +59,10 @@ a{color:var(--fg-1)}
 .skip{position:absolute;left:-9999px;top:8px;background:var(--marron-900);color:var(--crema);padding:10px 14px;border-radius:6px;z-index:100}
 .skip:focus{left:8px}
 #nav-toggle{display:none}
-@media (max-width:1140px){[data-logos]{flex-wrap:wrap!important;justify-content:flex-start!important;gap:20px 40px!important}}
+@media (max-width:1140px){[data-logos]{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 20px!important;align-items:center}
+[data-logos]>li{height:40px!important;justify-content:center}
+[data-logos] img{width:auto!important;max-width:100%!important;height:auto!important;max-height:22px}
+[data-logos] img[alt="Danone"],[data-logos] img[alt="Laboratorio Elea"]{max-height:34px}}
 @media (max-width:860px){
 #nav-toggle{display:inline-flex}
 #nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start!important;gap:4px!important;background:var(--crema);padding:12px 24px 24px;border-bottom:1px solid var(--crema-300);box-shadow:var(--shadow-md);display:none!important}
